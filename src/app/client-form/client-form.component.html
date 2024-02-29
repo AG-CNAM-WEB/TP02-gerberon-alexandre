@@ -45,7 +45,7 @@
 
   <div class="form-group">
     <label for="email">Email: </label>
-    <input id="email" type="email" formControlName="email" class="w-full p-2 border rounded"
+    <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" formControlName="email" class="w-full p-2 border rounded"
       [class.invalid-field]="clientForm.get('email')?.invalid && clientForm.get('email')?.touched">
   </div>
 
